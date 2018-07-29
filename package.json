@@ -4,7 +4,7 @@
   "description": "Codebase for the best website of a web developer you've ever seen.",
   "scripts": {
     "quickBuild": "npm run lint && npm run unitTest &&  npm run compile && npm run copyAssets",
-    "build": "npm install && npm run lint && npm run unitTest && npm run compile && npm run copyAssets && npm run visTest",
+    "build": "npm install && npm update && npm run lint && npm run unitTest && npm run compile && npm run copyAssets && npm run visTest",
     "lint": "cd ./node_modules/jdev_foundational/ && npm run lint -- ../../src/**/*.html ../../src/**/*.scss ../../src/**/*.jsx && cd -",
     "transpile": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . transpileJs",
     "unitTest": "cd ./node_modules/jdev_foundational && npm run unitTest && cd -",
