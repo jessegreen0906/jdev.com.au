@@ -34,6 +34,8 @@
     "react-test-renderer": "^16.4.1"
   },
   "dependencies": {
+    "grunt-sass": "^3.0.1",
+    "node-sass": "^4.9.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   }
