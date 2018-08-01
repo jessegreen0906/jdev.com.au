@@ -1,42 +1,40 @@
 {
-  "name": "jdev.com.au",
-  "version": "0.1.0",
-  "description": "Codebase for the best website of a web developer you've ever seen.",
-  "scripts": {
-    "quickBuild": "npm run lint && npm run unitTest &&  npm run compile && npm run copyAssets",
-    "build": "npm install && npm update && npm run lint && npm run unitTest && npm run compile && npm run copyAssets && npm run visTest",
-    "lint": "cd ./node_modules/jdev_foundational/ && npm run lint -- ../../src/**/*.html ../../src/**/*.scss ../../src/**/*.jsx && cd -",
-    "transpile": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . transpileJs",
-    "unitTest": "cd ./node_modules/jdev_foundational && npm run unitTest && cd -",
-    "compile": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . sass",
-    "copyAssets": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . copy",
-    "visTest": "cd ./node_modules/jdev_foundational && npm run visTest -- ../../test/visual-tests/*.test.js && cd -",
-    "babel": "babel src -d build/rawJs && webpack --config webpack.config.js && cp -r src/ui/components/* build/ui/components && rm -rf build/rawJs",
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jessegreen0906/jdev.com.au.git"
-  },
-  "author": "Jesse Green",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jessegreen0906/jdev.com.au/issues"
-  },
-  "homepage": "https://github.com/jessegreen0906/jdev.com.au#readme",
-  "devDependencies": {
-    "babel-jest": "^23.4.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "jdev_foundational": "git+https://github.com/jessegreen0906/JDev_foundational.git",
-    "jest": "^23.4.0",
-    "react": "^16.4.1",
-    "react-test-renderer": "^16.4.1"
-  },
-  "dependencies": {
-    "grunt-sass": "^3.0.1",
-    "node-sass": "^4.9.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
-  }
+	"name": "jdev.com.au",
+	"version": "0.1.0",
+	"description": "Codebase for the best website of a web developer you've ever seen.",
+	"scripts": {
+		"quickBuild": "npm run lint && npm run unitTest &&  npm run compile && npm run copyAssets",
+		"build": "npm install && npm update && npm run lint && npm run unitTest && npm run compile && npm run copyAssets && npm run visTest",
+		"lint": "cd ./node_modules/jdev_foundational/ && npm run lint -- ../../src/**/*.html ../../src/**/*.scss ../../src/**/*.jsx && cd -",
+		"transpile": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . transpileJs",
+		"unitTest": "cd ./node_modules/jdev_foundational && npm run unitTest && cd -",
+		"compile": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . sass",
+		"copyAssets": "grunt --gruntfile ./node_modules/jdev_foundational/build_configs/Gruntfile.js --base . copy",
+		"visTest": "cd ./node_modules/jdev_foundational && npm run visTest -- ../../test/visual-tests/*.test.js && cd -",
+		"babel": "babel src -d build/rawJs && webpack --config webpack.config.js && cp -r src/ui/components/* build/ui/components && rm -rf build/rawJs",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jessegreen0906/jdev.com.au.git"
+	},
+	"author": "Jesse Green",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jessegreen0906/jdev.com.au/issues"
+	},
+	"homepage": "https://github.com/jessegreen0906/jdev.com.au#readme",
+	"devDependencies": {
+		"babel-jest": "^23.4.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"jdev_foundational": "git+https://github.com/jessegreen0906/JDev_foundational.git",
+		"jest": "^23.4.0",
+		"react": "^16.4.1",
+		"react-test-renderer": "^16.4.1"
+	},
+	"dependencies": {
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1"
+	}
 }
