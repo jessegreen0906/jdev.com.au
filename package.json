@@ -29,7 +29,7 @@
 		"babel-jest": "^23.4.0",
 		"babel-preset-env": "^1.7.0",
 		"babel-preset-react": "^6.24.1",
-		"jdev_foundational": "git+https://github.com/jessegreen0906/JDev_foundational.git",
+		"jdev_foundational": "git+https://github.com/jessegreen0906/JDev_foundational/tree/version/1.1.0",
 		"jest": "^23.4.0",
 		"react": "^16.4.1",
 		"react-test-renderer": "^16.4.1"
